@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "express-generator": "^4.16.1"
+  }
+}
