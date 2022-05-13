@@ -1,0 +1,15 @@
+.containerInf {
+  width: 100vw;
+  height: 30vh;
+  background-color: rgb(214, 44, 44);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.nodesInf {
+  margin: 0px 0px 0px 0px;
+  width: 250px;
+  height: 20%;
+  background-color: #fff;
+}

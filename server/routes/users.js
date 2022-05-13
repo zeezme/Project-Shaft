@@ -1,9 +1,21 @@
 var express = require('express');
 var router = express.Router();
+const db = require('../public/DB/');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+(async function() {
+  router.get('/', async (req, res) => {
+    res.send(await getUsers('*', 'users'));
+  });
+})();
+
+async function getUsers(colum, table) {
+  let users = await db.any(
+    `
+        SELECT ${colum} FROM ${table};
+    `
+  );
+
+  return users;
+}
 
 module.exports = router;
