@@ -21,7 +21,7 @@ export default function BarraInf() {
   return (
     <div className="containerInf">
       {dataa.map(res => (
-        <div className="nodesInf" key={res.id}>
+        <div className="nodesInf" key={res.id} >
           ADICIONAR
           <div>{res.name}</div>
         </div>

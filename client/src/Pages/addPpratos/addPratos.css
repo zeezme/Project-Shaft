@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+:root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.addPratosContainer {
+  width: 400px;
+  height: auto;
+  background-color: rgb(71, 90, 255);
+  border-radius: 15px;
+  position: relative;
+  font-family: 'open Sans';
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.addPratosForm {
+  padding: 20px;
+  border: none;
+}
+.addPratosForm input {
+  border: none;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.submitButton {
+  all: unset;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  color: rgba(255, 255, 255, 0.685);
+}
