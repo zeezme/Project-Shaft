@@ -88,6 +88,13 @@
   font-size: 15px;
   background-color: rgb(71, 90, 255);
   color: white;
+  text-align: center;
+  line-height: 60px;
+}
+.button:disabled {
+  background-color: rgb(77, 77, 77);
+  cursor: initial;
+  color: rgb(51, 51, 51);
 }
 .teste {
   text-decoration: none;

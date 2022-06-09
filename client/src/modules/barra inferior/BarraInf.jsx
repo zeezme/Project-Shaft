@@ -7,7 +7,7 @@ export default function BarraInf() {
   const fetchURL = 'http://localhost:3000/pratos';
 
   useEffect(() => {
-    (async function () {
+    (async function() {
       const interval = setInterval(async () => {
         const x = await fetch(fetchURL).then(res => res.json());
         setDataa(x);
@@ -20,12 +20,12 @@ export default function BarraInf() {
 
   return (
     <div className="containerInf">
-      {dataa.map(res => (
-        <div className="nodesInf" key={res.id} >
+      {dataa.map(res =>
+        <div className="nodesInf" key={res.id}>
           ADICIONAR
           <div>{res.name}</div>
         </div>
-      ))}
+      )}
     </div>
   );
 }

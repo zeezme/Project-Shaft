@@ -3,10 +3,9 @@ var router = express.Router();
 const db = require('../public/DB');
 
 async function receiveAddUser() {
-  router.get('/', async (req, res) => {
-    await addUser('Cliente', 'Pedido');
-    console.log('Added joaoputo');
-    res.send(';)');
+  router.post('/', async (req, res) => {
+    await addUser(req.body.fprato, req.body.fvalor);
+    res.redirect('http://192.168.0.8:3001/kitchen');
   });
 }
 

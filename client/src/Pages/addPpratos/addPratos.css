@@ -34,10 +34,20 @@
 
 .submitButton {
   all: unset;
-  margin-bottom: 20px;
+
   cursor: pointer;
 }
 
+.exitButton {
+  all: unset;
+
+  cursor: pointer;
+  margin-left: 20px;
+}
+
 .submitButton:hover {
+  color: rgba(255, 255, 255, 0.685);
+}
+.exitButton:hover {
   color: rgba(255, 255, 255, 0.685);
 }
