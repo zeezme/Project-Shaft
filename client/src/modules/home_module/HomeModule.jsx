@@ -6,17 +6,14 @@ export default function HomeModule() {
   return (
     <div className="container">
       <div className="buttons">
-        <button
-          className="button"
-          onClick={() => {
-            fetch(`http://localhost:3000/adduser`);
-          }}
-        >
+        <Link className="button" to="/cashier">
           CAIXA
-        </button>
-
+        </Link>
         <Link className="button" to="/kitchen">
           COZINHA
+        </Link>
+        <Link className="button" to="/waiter">
+          GARÇOM
         </Link>
       </div>
     </div>
