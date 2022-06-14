@@ -41,6 +41,7 @@
   font-weight: 600;
   font-family: 'open sans';
   color: white;
+  line-height: 19px;
 }
 
 .pedido {
@@ -99,4 +100,14 @@
 .teste {
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+.floatingBtnMultiple {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
 }

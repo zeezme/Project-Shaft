@@ -17,7 +17,7 @@ export default function AddPratos() {
         <br/>
         <button type="submit" className="submitButton">Adicionar</button>
         <button className='exitButton' type="reset">
-          <Link className="exitButton" to="/">
+          <Link className="exitButton" to="/kitchen">
             Voltar
           </Link>
         </button>

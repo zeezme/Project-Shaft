@@ -1,34 +1,23 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './kitchen.css';
-import { Link } from 'react-router-dom';
-import { FloatingBtn } from '../../modules/floating_button/FloatingBtn';
+import {
+  FloatingBtn,
+  FloatingBtnFunctional
+} from '../../modules/floating_button/FloatingBtn';
 
 export default function Nodes() {
   const [data, setData] = useState([]);
-  const [pratos, setPratos] = useState([]);
 
-  const fetchURL = 'http://localhost:3000/users';
+  const fetchURL = 'http://192.168.0.8:3000/users';
 
   useEffect(() => {
     (async function() {
       const interval = setInterval(async () => {
-        const x = await fetch(fetchURL).then(res => res.json());
+        const x = await fetch(fetchURL, {
+          mode: 'cors'
+        }).then(res => res.json());
         setData(x);
-      }, 1000);
-      return () => {
-        clearInterval(interval);
-      };
-    })();
-  }, []);
-
-  useEffect(() => {
-    (async function() {
-      const interval = setInterval(async () => {
-        const x = await fetch('http://localhost:3000/pratos').then(res =>
-          res.json()
-        );
-        setPratos(x);
       }, 1000);
       return () => {
         clearInterval(interval);
@@ -39,27 +28,7 @@ export default function Nodes() {
   return (
     <div className="container">
       <div className="buttons">
-        <button
-          className="button"
-          onClick={() => {
-            fetch(`http://localhost:3000/adduser`);
-          }}
-          disabled
-        >
-          ADD CLIENTE
-        </button>
-        <button
-          className="button"
-          onClick={() => {
-            fetch(`http://localhost:3000/deluser`);
-          }}
-        >
-          DELL ALL
-        </button>
-
-        <Link className="button" to="/clientinput">
-          ADD CLIENTE
-        </Link>
+        <div className="button">COZINHA</div>
       </div>
       <div className="node">
         {data.map(dataa =>
@@ -81,7 +50,16 @@ export default function Nodes() {
           </div>
         )}
       </div>
-      <FloatingBtn title="voltar" />
+      <div className="floatingBtnMultiple">
+        <FloatingBtn title="+" to="/clientinput" />
+        <FloatingBtnFunctional
+          title="-"
+          onClickFunction={() => {
+            fetch(`http://192.168.0.8:3000/deluser`);
+          }}
+        />
+        <FloatingBtn title="voltar" to="/" />
+      </div>
     </div>
   );
 }
