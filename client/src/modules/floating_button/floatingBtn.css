@@ -1,0 +1,22 @@
+.floatingBtnContainer {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(71, 90, 255);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  margin: 15px;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  font-family: 'open sans';
+  font-size: 19px;
+  cursor: pointer;
+  border-style: none;
+  text-decoration: none;
+}
+
+.floatingBtnContainer:hover {
+  background-color: rgba(71, 89, 255, 0.5);
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import './kitchen.css';
 import { Link } from 'react-router-dom';
+import { FloatingBtn } from '../../modules/floating_button/FloatingBtn';
 
 export default function Nodes() {
   const [data, setData] = useState([]);
@@ -56,7 +57,7 @@ export default function Nodes() {
           DELL ALL
         </button>
 
-        <Link className="button" to="/addpratos">
+        <Link className="button" to="/clientinput">
           ADD CLIENTE
         </Link>
       </div>
@@ -74,15 +75,13 @@ export default function Nodes() {
             </div>
             <div className="pedido">
               <ul>
-                <li>Exemplo</li>
-                <li>Exemplo</li>
-                <li>Exemplo</li>
-                <li>Exemplo</li>
+                <li>Sem pedidos</li>
               </ul>
             </div>
           </div>
         )}
       </div>
+      <FloatingBtn title="voltar" />
     </div>
   );
 }

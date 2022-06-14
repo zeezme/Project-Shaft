@@ -1,9 +1,8 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import './nodes.css';
+import './homeModule.css';
 import { Link } from 'react-router-dom';
 
-export default function Nodes() {
+export default function HomeModule() {
   return (
     <div className="container">
       <div className="buttons">
@@ -15,12 +14,10 @@ export default function Nodes() {
         >
           CAIXA
         </button>
-        <button className="button">
-          <Link className="teste" to="/kitchen">
-            COZINHA
-          </Link>
-        </button>
 
+        <Link className="button" to="/kitchen">
+          COZINHA
+        </Link>
       </div>
     </div>
   );

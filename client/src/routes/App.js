@@ -1,6 +1,6 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import Main from '../Pages/main/Main.jsx';
-import AddPratos from '../Pages/addPpratos/AddPratos.jsx';
+import { Routes, Route } from 'react-router-dom';
+import Home from '../Pages/home/Home.jsx';
+import ClientInput from '../Pages/checkin/ClientInput.jsx';
 import Kitchen from '../Pages/kitchen/Kitchen.jsx'
 import('./app.css');
 
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route>
           <Route path="/" element={<HomeRoute />} />
-          <Route path="/addpratos" element={<AddPratosRoute/>}/>
+          <Route path="/clientInput" element={<ClientInputRoute/>}/>
           <Route path="/kitchen" element={<KitchenRoute />} />
         </Route>
       </Routes>
@@ -21,15 +21,15 @@ function App() {
 function HomeRoute() {
   return (
     <>
-      <Main/>
+      <Home/>
     </>
   )
 }
 
-function AddPratosRoute() {
+function ClientInputRoute() {
   return (
     <>
-      <AddPratos/>
+      <ClientInput/>
     </>
   )
 }
