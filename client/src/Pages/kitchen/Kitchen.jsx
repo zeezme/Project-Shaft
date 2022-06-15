@@ -51,13 +51,6 @@ export default function Nodes() {
         )}
       </div>
       <div className="floatingBtnMultiple">
-        <FloatingBtn title="+" to="/clientinput" />
-        <FloatingBtnFunctional
-          title="-"
-          onClickFunction={() => {
-            fetch(`http://192.168.0.8:3000/deluser`);
-          }}
-        />
         <FloatingBtn title="voltar" to="/" />
       </div>
     </div>

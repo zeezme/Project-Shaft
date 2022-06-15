@@ -9,13 +9,16 @@ const db = require('../public/DB/');
 })();
 
 async function getUsers(colum, table) {
-  let users = await db.any(
-    `
-        SELECT ${colum} FROM ${table};
-    `
-  );
-
-  return users;
+  try {
+    let users = await db.any(
+      `
+          SELECT ${colum} FROM ${table};
+      `
+    );
+    return users;
+  } catch (e) {
+    console.log('Failed to coonect to db', e);
+  }
 }
 
 module.exports = router;

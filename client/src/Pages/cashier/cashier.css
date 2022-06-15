@@ -57,3 +57,94 @@
   text-align: center;
   line-height: 60px;
 }
+
+.cashierRemoveButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.cashierRemoveButtonfalse {
+  text-align: center;
+  font-family: 'open sans';
+  background-color: rgb(71, 90, 255);
+  border-style: none;
+  color: white;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: opacity 50ms ease-in-out;
+}
+
+.cashierRemoveButtonActive {
+  text-align: center;
+  font-family: 'open sans';
+  background-color: rgb(71, 90, 255);
+  border-style: none;
+  color: white;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 50ms ease-in-out;
+}
+.cashierRemoveButtonActive input {
+  width: 95%;
+  padding: 5px;
+}
+.cashierRemoveButtonfalse input {
+  width: 95%;
+  padding: 5px;
+}
+
+.cashierRemoveButton {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(71, 90, 255);
+
+  border-radius: 40px;
+  margin: 5px;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  font-family: 'open sans';
+  font-size: 19px;
+  cursor: pointer;
+  border-style: none;
+  text-decoration: none;
+}
+.cashierRemoveButtonSubmit {
+  all: unset;
+  margin: 30px 20px 20px 20px;
+
+  border-style: none;
+  font-family: 'open sans';
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cashierRemoveButtonSubmit:hover {
+  color: rgb(55, 0, 255);
+}
+
+.cashierRemoveButtonTitle {
+  border-style: none;
+  font-family: 'open sans';
+  font-weight: 700;
+  font-size: 20px;
+}
