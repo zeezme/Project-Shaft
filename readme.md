@@ -65,11 +65,11 @@ Using:
 
 <ins>Kitchen</ins>
 
-<img src="https://user-images.githubusercontent.com/65919238/174212313-2d44a020-5479-44d0-9be5-33f4b71b1a78.png" width="80%" />
+<img src="https://user-images.githubusercontent.com/65919238/174212313-2d44a020-5479-44d0-9be5-33f4b71b1a78.png" width="85%" height="85%" />
 
 <ins>Cashier</ins>
 
-<img src="https://user-images.githubusercontent.com/65919238/174211643-77162321-0fc4-48f1-9bff-11eec68220bc.png" width="80%" />
+<img src="https://user-images.githubusercontent.com/65919238/174211643-77162321-0fc4-48f1-9bff-11eec68220bc.png" width="85%" />
 
 <ins>Buttons</ins>
 
