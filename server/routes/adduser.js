@@ -4,7 +4,7 @@ const db = require('../public/DB');
 
 async function receiveAddUser() {
   router.post('/', async (req, res) => {
-    await addUser(req.body.fprato, req.body.fvalor);
+    await addUser(req.body.fname, req.body.fcpf);
     res.redirect('http://192.168.0.8:3001/cashier');
   });
 }

@@ -2,10 +2,13 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import "./cashier.css"
 import { FloatingBtn } from '../../modules/floating_button/FloatingBtn';
+import { Checkout } from '../../modules/checkout/Checkout';
+import { ClientInput } from '../checkin/ClientInput';
 
 
 export default function Cashier() {
   const [open, setOpen] = useState("false");
+  const [openPlus, setOpenPlus] = useState("false");
 
   const [data, setData] = useState([]);
 
@@ -48,24 +51,15 @@ export default function Cashier() {
         )}
       </div>
   </div>
-  <div className="cashierRemoveButtonContainer">
-    <form action="http://192.168.0.8:3000/deluser" className={"cashierRemoveButton"+(open && "Active")} method="post">
-      <div className="cashierRemoveButtonTitle">CHECKOUT</div>
-      <div className="cashierRemoveButtonInnerContainer">
-      <h3>CPF</h3>
-      <input id='fid' name='fid'  type='number'/>
-      </div>
-     
-                
-        <button type="submit" className="cashierRemoveButtonSubmit">checkout</button>
-   
-      </form> 
+    <Checkout btnState={open}></Checkout>
+    <ClientInput btnState={openPlus}></ClientInput>
 
-    </div>
-    
     <div className="floatingBtnMultiple">
-    <FloatingBtn title="+" to="/clientinput" />
-    <button onClick={()=>{setOpen(!open)}} className="cashierRemoveButton" >-</button> 
+    <button onClick={()=>{open ? setOpenPlus(!openPlus) : setOpen(!open); setOpenPlus(!openPlus)}
+      
+    } className="cashierAddButton" >+</button> 
+
+    <button onClick={()=>{openPlus ? setOpen(!open) : setOpenPlus(!openPlus); setOpen(!open) }} className="cashierRemoveButton" >-</button> 
     <FloatingBtn title="voltar" to="/"  />
 
     

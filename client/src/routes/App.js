@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../Pages/home/Home.jsx';
-import ClientInput from '../Pages/checkin/ClientInput.jsx';
+import {ClientInput} from '../Pages/checkin/ClientInput.jsx';
 import Kitchen from '../Pages/kitchen/Kitchen.jsx'
 import Cashier from '../Pages/cashier/Cashier.jsx';
 import Waiter from '../Pages/waiter/Waiter.jsx';

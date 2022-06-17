@@ -2,25 +2,22 @@ import {Link} from "react-router-dom";
 import React from 'react';
 import('./clientInput.css');
 
-export default function AddPratos() {
+export function ClientInput(props) {
  
   return (
   <>
-    <div className="addPratosContainer">
-      Entrada cliente
+  
+    <div className={"addPratosContainer"+(props.btnState && 'Active')}>
+      <div className="text">Check in</div>
       <form action="http://192.168.0.8:3000/adduser" className='addPratosForm' method="post">
-        <label for="fprato">Nome <input id='fprato' name='fprato' type='text'></input> </label>
-        <br/>
-        <br/>  
-        <label for="fvalor">CPF <input type='number' id='fvalor' name='fvalor'></input></label>  
-        <br/>
-        <br/>
-        <button type="submit" className="submitButton">Adicionar</button>
-        <button className='exitButton' type="reset">
-          <Link className="exitButton" to="/cashier">
-            Voltar
-          </Link>
-        </button>
+      <div className="text2">Name</div>
+      <input id='fname' name='fname' type='text'></input>
+      <div className="text2">CPF</div>
+
+      <input type='number' id='fcpf' name='fcpf'></input>
+     
+      <button type="submit" className="clientInputSubmit">Adicionar</button>
+
      
       </form>
 

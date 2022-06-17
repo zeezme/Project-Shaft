@@ -75,7 +75,7 @@
 .cashierRemoveButtonfalse {
   text-align: center;
   font-family: 'open sans';
-  background-color: rgb(71, 90, 255);
+  background-color: rgb(179, 5, 5);
   border-style: none;
   color: white;
   height: 200px;
@@ -90,7 +90,7 @@
 .cashierRemoveButtonActive {
   text-align: center;
   font-family: 'open sans';
-  background-color: rgb(71, 90, 255);
+ 
   border-style: none;
   color: white;
   height: 200px;
@@ -105,28 +105,15 @@
 .cashierRemoveButtonActive input {
   width: 95%;
   padding: 5px;
+  border: none;
 }
 .cashierRemoveButtonfalse input {
   width: 95%;
   padding: 5px;
+  border: none;
 }
 
-.cashierRemoveButton {
-  height: 70px;
-  width: 70px;
-  background-color: rgb(71, 90, 255);
 
-  border-radius: 40px;
-  margin: 5px;
-  text-align: center;
-  line-height: 70px;
-  color: white;
-  font-family: 'open sans';
-  font-size: 19px;
-  cursor: pointer;
-  border-style: none;
-  text-decoration: none;
-}
 .cashierRemoveButtonSubmit {
   all: unset;
   margin: 30px 20px 20px 20px;
@@ -147,4 +134,38 @@
   font-family: 'open sans';
   font-weight: 700;
   font-size: 20px;
+}
+
+.cashierAddButton {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(2, 177, 31);
+
+  border-radius: 40px;
+  margin: 5px;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  font-family: 'open sans';
+  font-size: 19px;
+  cursor: pointer;
+  border-style: none;
+  text-decoration: none;
+}
+
+.cashierRemoveButton {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(179, 5, 5);
+
+  border-radius: 40px;
+  margin: 5px;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+  font-family: 'open sans';
+  font-size: 19px;
+  cursor: pointer;
+  border-style: none;
+  text-decoration: none;
 }
