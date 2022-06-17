@@ -55,7 +55,28 @@ Using:
 	<li>Full refactor of the code for better readability</li>
 	<li>Project structure</li>
 </ul>
-			
+		
+
+<h2>Images</h2>
+
+<ins>Home Page</ins>
+
+![small Home](https://user-images.githubusercontent.com/65919238/174212140-c0af7086-99b0-440b-bf3d-a25d4007431a.png)
+
+<ins>Kitchen</ins>
+
+<img src="https://user-images.githubusercontent.com/65919238/174212313-2d44a020-5479-44d0-9be5-33f4b71b1a78.png" width="80%" />
+
+<ins>Cashier</ins>
+
+<img src="https://user-images.githubusercontent.com/65919238/174211643-77162321-0fc4-48f1-9bff-11eec68220bc.png" width="80%" />
+
+<ins>Buttons</ins>
+
+![checkin2](https://user-images.githubusercontent.com/65919238/174211922-be9f9302-0d40-43aa-8084-43e5adfc3bea.png)
+![checkout](https://user-images.githubusercontent.com/65919238/174211927-60d0f06c-86ea-4ff4-818f-735e0162f3c7.png)
+
+	
 
 
 	
