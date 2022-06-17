@@ -4,7 +4,7 @@
 <ul>
 	<li>Help restaurant staff to manage the costumer traffic</li>
 	<li>Help the waiters to take and deliver the orders to the kitchen</li>
-	<li>Automatically calculate costumer consummation</li>
+	<li>Automatically calculate costumer consumption</li>
 	<li>Store costumer registration for future visits</li>
 </ul>
 		
